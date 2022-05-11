@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html5css3</title>
+    <!-- - - - - - https://realfavicongenerator.net/ - - - - - -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#da532c">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Add Css-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
 </head>
+
 <body>
     <!-- Cabeçalho -->
-    <header class="cabecalho">
-        <img src="img/favicon.png" alt="Icone Fivecon">
-        <ul>
-            <li> HTML </li>
-            <li> CSS </li>
-            <li> JavaScript </li>
-            <li> Links Úteis </li>
+    <header class="flex-container-row menu">
+        <img src="img/favicon.png" alt="Icone Fivecon" id="logo">
+        <ul class="flex-container-row">
+            <li><a href="#HTML"> HTML </a></li>
+            <li><a href="#"> CSS </a></li>
+            <li><a href="#"> JavaScript </a></li>
+            <li><a href="#"> Links Úteis </a></li>
         </ul>
     </header>
 
     <!-- Destaque -->
-    <nav class="menu">
-        <h1> Aprenda HTML5, CSS3, e JavaScript </h1>
-        <h2> Escrever com semântica </h2>
-        <h2> Aplicar estilos modernos </h2>
-        <h2> Obter uma melhor interação! </h2>
+    <nav id="Destaque" class="flex-container-column">
+        <h1> Aprenda <em class="destaqueHTML">HTML5</em>, <em class="destaqueCSS">CSS3</em> e <em class="destaqueJS">JavaScript</em> </h1>
+        <h2> Escrever <em class="destaqueHTML">semântica</em>!</h2>
+        <h2> Aplicar <em class="destaqueCSS">estilos</em> modernos! </h2>
+        <h2> Obter uma melhor <em class="destaqueJS">interação</em>!</h2>
     </nav>
 
     <!--Campo HTML-->
-    <section class="campoHtml">
-        <img src="img/HTML5.png" alt="logo html">
-        <h2> HTML5 </h2>
-        <p> A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.
-        </p>
-        <div> Saiba mais </div>
+    <section id="HTML" class="flex-container-column">
+        <div class="flex-container-row">
+            <img src="img/HTML5.png" alt="logo html">
+            <div class="flex-container-column section-details">
+
+                <h2> HTML5 </h2>
+                <p> A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais
+                    semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e
+                    perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que
+                    facilita a reutilização da informação de diversas formas.
+                </p>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="botao">Saiba mais</a>
+            </div>
+        </div>
     </section>
 
     <!--Campo CSS-->
-    <section class="campoCss">
-        <img src="img/CSS3.png" alt="logo css">
-        <h2> CSS3 </h2>
-        <h4> O CSS Complementa o HTML </h4>
-        <p> CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.
-        </p>
-        <div> Saiba Mais </div>
+    <section id="CSS" class="flex-container-column">
+        <div class="flex-container-row" id="InverterFlexBox">
+            <img src="img/CSS3.png" alt="logo css">
+            <div class="flex-container-column section-details">
+
+                <h2> CSS3 </h2>
+                <h4> O CSS Complementa o HTML </h4>
+                <p> CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para
+                    personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e
+                    permitir uma apresentação mais amigável para o usuário.
+                </p>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="botao">Saiba mais</a>
+            </div>
+        </div>
     </section>
 
     <!--Campo JS-->
-    <section class="campoJS">
-        <img src="img/JS.png" alt="logo js">
+    <section id="JavaScript" class="flex-container-column">
+        <div class="flex-container-row">
+            <img src="img/JS.png" alt="logo js">
 
-        <h2> JavaScript </h2>
-        <h4> Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web </h4>
-        <p> O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional). 
-        </p>
+            <div class="flex-container-column section-details">
 
-        <div> Saiba Mais </div>
+                <h2> JavaScript </h2>
+                <h4> Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web </h4>
+                <p> O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos
+                    de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
+                </p>
+
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="botao">Saiba mais</a>
+            </div>
+        </div>
     </section>
 
     <!-- Links Úteis -->
@@ -68,7 +99,7 @@
             <li> Figma (https://www.figma.com/) </li>
             <li> Google Fonts (https://fonts.google.com/) </li>
             <li> unicode.org (https://home.unicode.org/) </li>
-            <li> Favicon Generator (https://realfavicongenerator.net/)  </li>
+            <li> Favicon Generator (https://realfavicongenerator.net/) </li>
             <li> Bootstrap (https://getbootstrap.com/) </li>
         </ul>
 
@@ -104,16 +135,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
